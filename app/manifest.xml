@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <name>Privacy Removal Helper</name>
+  <id>com.github.intro-privacy-removal-helper</id>
+  <version>1.0.0</version>
+  <description>A small web app that helps users create a privacy removal request for content exposing personal or sensitive information.</description>
+  <author>
+    <name>GitHub Skills</name>
+    <website>https://github.com/skills</website>
+  </author>
+  <files>
+    <file>index.html</file>
+    <file>styles.css</file>
+    <file>script.js</file>
+    <file>README.md</file>
+  </files>
+  <metadata>
+    <license>CC-BY-4.0</license>
+    <platform>Static web</platform>
+    <language>HTML, CSS, JavaScript</language>
+  </metadata>
+</application>

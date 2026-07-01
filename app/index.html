@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Removal Helper</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Privacy help tool</p>
+        <h1>Privacy Removal Helper</h1>
+        <p>Generate a clear request for removing online content that violates your privacy, and get next steps for reporting it.</p>
+      </div>
+    </header>
+
+    <section class="panel">
+      <form id="privacy-form">
+        <label for="content-url">URL of the content</label>
+        <input id="content-url" name="contentUrl" type="url" placeholder="https://example.com/page" required />
+
+        <label for="platform">Website or platform</label>
+        <input id="platform" name="platform" type="text" placeholder="Example.com, Google, social network" required />
+
+        <label for="privacy-issue">What private information is exposed?</label>
+        <textarea id="privacy-issue" name="privacyIssue" rows="4" placeholder="Describe the sensitive data or privacy concern" required></textarea>
+
+        <label for="request-type">Type of request</label>
+        <select id="request-type" name="requestType">
+          <option value="remove-content">Remove the content from the website</option>
+          <option value="remove-search">Remove the content from search results</option>
+          <option value="report-privacy">Report a privacy violation</option>
+        </select>
+
+        <button type="submit" class="primary">Create a privacy request</button>
+      </form>
+    </section>
+
+    <section class="panel output-panel hidden" id="output-panel">
+      <div class="output-header">
+        <h2>Your request template</h2>
+        <button id="copy-button" type="button">Copy to clipboard</button>
+      </div>
+      <pre id="output-text" class="output-text" aria-live="polite"></pre>
+      <div class="notes">
+        <h3>Next steps</h3>
+        <ul>
+          <li>Find the platform's privacy policy or report form before sending the request.</li>
+          <li>Be polite and factual. Mention that the content contains private or personal data.</li>
+          <li>If a website does not respond, escalate to the search engine or platform's complaint process.</li>
+          <li>Keep a copy of the request and response for your records.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
